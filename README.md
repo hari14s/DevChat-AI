@@ -44,4 +44,4 @@ GROQ_API_KEY=your_groq_key
 ### 4. Run in VS Code
 - Open this project in VS Code
 - Press F5 to launch the extension in a new Extension Development Host window
-- Open the command palette (Ctrl + Shift + P), and run: DevChat AI: Open Chat
+- Open the command palette (Ctrl + Shift + P), and run: Open DevChat AI

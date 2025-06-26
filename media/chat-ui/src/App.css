@@ -1,0 +1,80 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #212121;
+  font-family: 'Segoe UI', sans-serif;
+  color: #d1d5db; 
+}
+
+.chat-window {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #2f2f2f;
+  color: #f2f2f2;
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 0.75rem;
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.ai-message {
+  align-self: flex-start;
+  color: #f2f2f2;
+  max-width: 90%;  
+  white-space: pre-wrap;  
+  word-break: break-word; 
+  overflow-wrap: break-word; 
+}
+.ai-message pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+.ai-message code {
+  font-family: 'Fira Code', monospace;
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: #282c34;
+  color: #f8f8f2;
+}
+
+/* Tighter spacing for markdown ordered lists in AI messages */
+.ai-message ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+
+.ai-message li {
+  margin-bottom: 0.25rem; /* reduce space between list items */
+}
+
+/* Remove default paragraph margin inside AI message */
+.ai-message p {
+  margin: 0;
+}
+
+
+
+
